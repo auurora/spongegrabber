@@ -25,9 +25,7 @@ let images = [
 let music = [
     "https://archive.org/download/OMFGILoveYou/OMFG%20-%20I%20Love%20You.mp3",
     "https://archive.org/download/OMFGHello_20150908/OMFG%20-%20Hello.mp3",
-    "https://www.incompetech.com/music/royalty-free/mp3-royaltyfree/Carefree.mp3",
-    "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Balloon%20Game.mp3",
-    "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Future%20Gladiator.mp3",
+    "https://github.com/auurora/spongegrabber/raw/main/res/AlanWalker_Faded.mp3"
 
 ];
 
@@ -75,12 +73,12 @@ let span = (classname, parent) => {
     {
         le.style.fontWeight = "bold";
     }
-    le.style.fontFamily = fonts[Math.floor(Math.random() * fonts.length)];
+    le.style.fontFamily = fonts[(new Date()).getTime() % fonts.length];
     return le;
 }
 
-let get_image = () => images[Math.floor(Math.random() * images.length)];
-let get_music = () => music[Math.floor(Math.random() * music.length)];
+let get_image = () => images[(new Date()).getTime() % images.length];
+let get_music = () => music[(new Date()).getTime() % music.length];
 
 let bgsizes = [
     "cover",
@@ -93,7 +91,7 @@ let bgsizes = [
     "200% 100%",
     "100% 200%",
 ];
-let getbgsize = () => bgsizes[Math.floor(Math.random() * bgsizes.length)];
+let getbgsize = () => bgsizes[(new Date()).getTime() % bgsizes.length];
 
 class text_generator
 {
