@@ -8,7 +8,7 @@
 
     if ($cloudflare_enabled) 
     {
-        $ip = $_SERVER["CF-Connecting-IP"];
+        $ip = $_SERVER["HTTP_CF_CONNECTING_IP"];
     }
 
     $ip = preg_replace('/[^0-9a-f.:]/', '', $ip);
