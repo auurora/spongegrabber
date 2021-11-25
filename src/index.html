@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="ip.php" type="text/javascript"></script>
+        <script src="generator.js" type="text/javascript"></script>
+        <style>
+            .hidden_audio
+            {
+                display: none;
+            }
+
+            .master 
+            {
+                left: 0px;
+                top: 0px;
+                width: 100vw;
+                height: 100vh;
+                position: absolute;
+            }
+
+            .bg
+            {
+                left: 0px;
+                top: 0px;
+                width: 100vw;
+                height: 100vh;
+                position: absolute;
+            }
+
+            .txt 
+            {
+                font-size: 6em;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                position: absolute;
+                user-select: none;
+                cursor: default;
+            }
+
+
+            @keyframes anim_slide {
+                0% 
+                {
+                    left: -100%;
+                }
+            }
+            @keyframes anim_flip {
+                0%
+                {
+                    transform: rotateY(180deg) translateZ(-100px);
+                    perspective: 90px;
+                }
+            }
+            @keyframes anim_slight_turn {
+                0%
+                {
+                    transform: perspective(2020px) translateZ(-10px) rotateY(-50deg) translateZ(-100px);
+                }
+            }
+            @keyframes anim_coin_spin {
+                0%
+                {
+                    transform: scale(0.6) perspective(2000px) rotateY(-1080deg);
+                }
+            }
+
+            .flip
+            {
+                animation: anim_flip 0.5s ease-in-out;
+            }
+            
+            .slide 
+            {
+                animation: anim_slide 1s ease-in-out;
+            }
+
+            .slight_turn
+            {
+                animation: anim_slight_turn 1s ease-in-out;
+                perspective: 90px;
+
+            }
+
+            .coin_spin
+            {
+                animation: anim_coin_spin 3s ease-in-out;
+                perspective: 90px;
+
+            }
+
+
+        </style>
+    </head>
+
+    <body style="background: #000; overflow:hidden">
+    </body>
+</html>
