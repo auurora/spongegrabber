@@ -25,6 +25,9 @@ let images = [
 let music = [
     "https://archive.org/download/OMFGILoveYou/OMFG%20-%20I%20Love%20You.mp3",
     "https://archive.org/download/OMFGHello_20150908/OMFG%20-%20Hello.mp3",
+    "https://www.incompetech.com/music/royalty-free/mp3-royaltyfree/Carefree.mp3",
+    "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Balloon%20Game.mp3",
+    "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Future%20Gladiator.mp3",
 
 ];
 
